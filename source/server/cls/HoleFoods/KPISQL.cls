@@ -41,6 +41,7 @@ Method %OnGetSQL(ByRef pSQL As %String) As %Status
 			Set pSQL = tSQL1 _ " WHERE " _ tWHERE
 			If (tSQL2 '= "") {
 				Set pSQL = pSQL _ " GROUP BY" _ tSQL2
+				s a="1"
 			}
 		}
 	}
